@@ -14,15 +14,14 @@ class HGRulerSubUnitCell: UICollectionViewCell {
         return Constant.subUnitCellIdentifier
     }
     
-    private var scale: UILabel! {
+    private var unitLabel: UILabel! {
         didSet {
-            scale.backgroundColor = .black
-            scale.translatesAutoresizingMaskIntoConstraints = false
-            contentView.addSubview(scale)
-            let centerXConstraint = scale.centerXAnchor.constraint(equalTo: centerXAnchor)
-            let topConstraint = scale.topAnchor.constraint(equalTo: topAnchor)
-            let widthConstraint = scale.widthAnchor.constraint(equalToConstant: 1)
-            let heightConstraint = scale.heightAnchor.constraint(equalToConstant: 16)
+            unitLabel.translatesAutoresizingMaskIntoConstraints = false
+            addSubview(unitLabel)
+            let centerXConstraint = unitLabel.centerXAnchor.constraint(equalTo: centerXAnchor)
+            let topConstraint = unitLabel.topAnchor.constraint(equalTo: topAnchor)
+            let widthConstraint = unitLabel.widthAnchor.constraint(equalToConstant: 1)
+            let heightConstraint = unitLabel.heightAnchor.constraint(equalToConstant: 16)
             NSLayoutConstraint.activate([centerXConstraint, topConstraint, widthConstraint, heightConstraint])
         }
     }
@@ -38,6 +37,7 @@ class HGRulerSubUnitCell: UICollectionViewCell {
     }
     
     private func setup() {
-        scale = UILabel()
+        unitLabel = UILabel()
+        unitLabel.backgroundColor = .black
     }
 }

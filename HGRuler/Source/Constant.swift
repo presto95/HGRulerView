@@ -9,6 +9,8 @@
 import Foundation
 
 enum Constant {
+    
     static let mainUnitCellIdentifier = "mainUnitCell"
+    
     static let subUnitCellIdentifier = "subUnitCell"
 }

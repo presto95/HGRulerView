@@ -9,6 +9,8 @@
 import Foundation
 
 @objc public enum HGRulerCellType: Int {
-    case main = 0
+    
+    case main
+    
     case sub
 }

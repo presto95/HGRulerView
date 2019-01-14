@@ -24,7 +24,7 @@ class ViewController: UIViewController {
 
 extension ViewController: HGRulerViewDataSource {
     func numberOfItems(in rulerView: HGRulerView) -> Int {
-        return 100
+        return 100 + 1
     }
     
     func numberOfSubUnitsByMainUnit(in rulerView: HGRulerView) -> Int {
@@ -33,7 +33,5 @@ extension ViewController: HGRulerViewDataSource {
 }
 
 extension ViewController: HGRulerViewDelegate {
-    func interItemSpacing(in rulerView: HGRulerView) -> CGFloat {
-        return 20
-    }
+
 }
