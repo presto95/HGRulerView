@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1929735721EC39880021B05E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1929735621EC39880021B05E /* AppDelegate.swift */; };
+		1929735921EC39880021B05E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1929735821EC39880021B05E /* ViewController.swift */; };
+		1929735C21EC39880021B05E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1929735A21EC39880021B05E /* Main.storyboard */; };
+		1929735E21EC39890021B05E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1929735D21EC39890021B05E /* Assets.xcassets */; };
+		1929736121EC39890021B05E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1929735F21EC39890021B05E /* LaunchScreen.storyboard */; };
+		1929736A21EC39C80021B05E /* HGRulerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1929736921EC39C80021B05E /* HGRulerView.swift */; };
+		1929736F21EC3AED0021B05E /* HGRulerMainUnitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1929736D21EC3AED0021B05E /* HGRulerMainUnitCell.swift */; };
+		1929737321EC3AFB0021B05E /* HGRulerSubUnitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1929737121EC3AFB0021B05E /* HGRulerSubUnitCell.swift */; };
+		1929737621EC5A800021B05E /* HGRulerViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1929737521EC5A800021B05E /* HGRulerViewDelegate.swift */; };
+		1929737A21EC68F00021B05E /* HGRulerViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1929737921EC68F00021B05E /* HGRulerViewDataSource.swift */; };
+		1929737C21EC6A250021B05E /* HGRulerCellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1929737B21EC6A250021B05E /* HGRulerCellType.swift */; };
+		1929737E21EC6F000021B05E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1929737D21EC6F000021B05E /* Constant.swift */; };
+		1929738421EC7B4F0021B05E /* HGRulerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1929738321EC7B4F0021B05E /* HGRulerCollectionView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1929735321EC39880021B05E /* HGRuler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HGRuler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1929735621EC39880021B05E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1929735821EC39880021B05E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1929735B21EC39880021B05E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1929735D21EC39890021B05E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1929736021EC39890021B05E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1929736221EC39890021B05E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1929736921EC39C80021B05E /* HGRulerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGRulerView.swift; sourceTree = "<group>"; };
+		1929736D21EC3AED0021B05E /* HGRulerMainUnitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGRulerMainUnitCell.swift; sourceTree = "<group>"; };
+		1929737121EC3AFB0021B05E /* HGRulerSubUnitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGRulerSubUnitCell.swift; sourceTree = "<group>"; };
+		1929737521EC5A800021B05E /* HGRulerViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGRulerViewDelegate.swift; sourceTree = "<group>"; };
+		1929737921EC68F00021B05E /* HGRulerViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGRulerViewDataSource.swift; sourceTree = "<group>"; };
+		1929737B21EC6A250021B05E /* HGRulerCellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGRulerCellType.swift; sourceTree = "<group>"; };
+		1929737D21EC6F000021B05E /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		1929738321EC7B4F0021B05E /* HGRulerCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HGRulerCollectionView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1929735021EC39880021B05E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1929734A21EC39880021B05E = {
+			isa = PBXGroup;
+			children = (
+				1929735521EC39880021B05E /* HGRuler */,
+				1929735421EC39880021B05E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1929735421EC39880021B05E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1929735321EC39880021B05E /* HGRuler.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1929735521EC39880021B05E /* HGRuler */ = {
+			isa = PBXGroup;
+			children = (
+				1929735621EC39880021B05E /* AppDelegate.swift */,
+				1929735821EC39880021B05E /* ViewController.swift */,
+				1929735A21EC39880021B05E /* Main.storyboard */,
+				1929735D21EC39890021B05E /* Assets.xcassets */,
+				1929735F21EC39890021B05E /* LaunchScreen.storyboard */,
+				1929736221EC39890021B05E /* Info.plist */,
+				1929736821EC39AC0021B05E /* Source */,
+			);
+			path = HGRuler;
+			sourceTree = "<group>";
+		};
+		1929736821EC39AC0021B05E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1929737D21EC6F000021B05E /* Constant.swift */,
+				1929736921EC39C80021B05E /* HGRulerView.swift */,
+				1929738321EC7B4F0021B05E /* HGRulerCollectionView.swift */,
+				1929736D21EC3AED0021B05E /* HGRulerMainUnitCell.swift */,
+				1929737121EC3AFB0021B05E /* HGRulerSubUnitCell.swift */,
+				1929737921EC68F00021B05E /* HGRulerViewDataSource.swift */,
+				1929737521EC5A800021B05E /* HGRulerViewDelegate.swift */,
+				1929737B21EC6A250021B05E /* HGRulerCellType.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1929735221EC39880021B05E /* HGRuler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1929736521EC39890021B05E /* Build configuration list for PBXNativeTarget "HGRuler" */;
+			buildPhases = (
+				1929734F21EC39880021B05E /* Sources */,
+				1929735021EC39880021B05E /* Frameworks */,
+				1929735121EC39880021B05E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HGRuler;
+			productName = HGRuler;
+			productReference = 1929735321EC39880021B05E /* HGRuler.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1929734B21EC39880021B05E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = presto;
+				TargetAttributes = {
+					1929735221EC39880021B05E = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 1929734E21EC39880021B05E /* Build configuration list for PBXProject "HGRuler" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1929734A21EC39880021B05E;
+			productRefGroup = 1929735421EC39880021B05E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1929735221EC39880021B05E /* HGRuler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1929735121EC39880021B05E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1929736121EC39890021B05E /* LaunchScreen.storyboard in Resources */,
+				1929735E21EC39890021B05E /* Assets.xcassets in Resources */,
+				1929735C21EC39880021B05E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1929734F21EC39880021B05E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1929737321EC3AFB0021B05E /* HGRulerSubUnitCell.swift in Sources */,
+				1929737A21EC68F00021B05E /* HGRulerViewDataSource.swift in Sources */,
+				1929737E21EC6F000021B05E /* Constant.swift in Sources */,
+				1929738421EC7B4F0021B05E /* HGRulerCollectionView.swift in Sources */,
+				1929735921EC39880021B05E /* ViewController.swift in Sources */,
+				1929737C21EC6A250021B05E /* HGRulerCellType.swift in Sources */,
+				1929736F21EC3AED0021B05E /* HGRulerMainUnitCell.swift in Sources */,
+				1929736A21EC39C80021B05E /* HGRulerView.swift in Sources */,
+				1929735721EC39880021B05E /* AppDelegate.swift in Sources */,
+				1929737621EC5A800021B05E /* HGRulerViewDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1929735A21EC39880021B05E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1929735B21EC39880021B05E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1929735F21EC39890021B05E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1929736021EC39890021B05E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1929736321EC39890021B05E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1929736421EC39890021B05E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1929736621EC39890021B05E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H79MF628K3;
+				INFOPLIST_FILE = HGRuler/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.kr.presto.HGRuler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1929736721EC39890021B05E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H79MF628K3;
+				INFOPLIST_FILE = HGRuler/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.kr.presto.HGRuler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1929734E21EC39880021B05E /* Build configuration list for PBXProject "HGRuler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1929736321EC39890021B05E /* Debug */,
+				1929736421EC39890021B05E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1929736521EC39890021B05E /* Build configuration list for PBXNativeTarget "HGRuler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1929736621EC39890021B05E /* Debug */,
+				1929736721EC39890021B05E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1929734B21EC39880021B05E /* Project object */;
+}
