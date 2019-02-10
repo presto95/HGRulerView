@@ -8,37 +8,38 @@
 
 import UIKit
 
-class HGRulerCollectionView: UICollectionView {
-    
-    override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
-        super.init(frame: frame, collectionViewLayout: layout)
-        setup()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setup()
-    }
-
-    private func setup() {
-        register(HGRulerMainUnitCell.self, forCellWithReuseIdentifier: Constant.mainUnitCellIdentifier)
-        register(HGRulerSubUnitCell.self, forCellWithReuseIdentifier: Constant.subUnitCellIdentifier)
-        backgroundColor = .clear
-        allowsSelection = false
-        isScrollEnabled = true
-        showsVerticalScrollIndicator = false
-        showsHorizontalScrollIndicator = false
-        bounces = false
-        bouncesZoom = false
-        setLayout()
-    }
-    
-    private func setLayout() {
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
-        layout.itemSize = .init(width: 1, height: 32)
-        layout.minimumLineSpacing = 9
-        layout.minimumInteritemSpacing = .leastNonzeroMagnitude
-        collectionViewLayout = layout
-    }
+/// Defines collection view that presents ruler view.
+public final class HGRulerCollectionView: UICollectionView {
+  
+  override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
+    super.init(frame: frame, collectionViewLayout: layout)
+    setup()
+  }
+  
+  required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+    setup()
+  }
+  
+  private func setup() {
+    register(HGRulerMainUnitCell.self, forCellWithReuseIdentifier: Constant.mainUnitCellIdentifier)
+    register(HGRulerSubUnitCell.self, forCellWithReuseIdentifier: Constant.subUnitCellIdentifier)
+    backgroundColor = .clear
+    allowsSelection = false
+    isScrollEnabled = true
+    showsVerticalScrollIndicator = false
+    showsHorizontalScrollIndicator = false
+    bounces = false
+    bouncesZoom = false
+  }
+  
+  internal func setLayout(width: CGFloat?, height: CGFloat?) {
+    let layout = UICollectionViewFlowLayout()
+    layout.scrollDirection = .horizontal
+    layout.itemSize = .init(width: width ?? .leastNonzeroMagnitude,
+                            height: height ?? .leastNonzeroMagnitude)
+    layout.minimumLineSpacing = .leastNonzeroMagnitude
+    layout.minimumInteritemSpacing = .leastNonzeroMagnitude
+    collectionViewLayout = layout
+  }
 }

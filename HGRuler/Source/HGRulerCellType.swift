@@ -8,9 +8,12 @@
 
 import Foundation
 
-@objc public enum HGRulerCellType: Int {
-    
-    case main
-    
-    case sub
+/// Defines unit type.
+public enum HGRulerCellType {
+  
+  /// Main unit.
+  case main
+  
+  /// Sub unit.
+  case sub
 }

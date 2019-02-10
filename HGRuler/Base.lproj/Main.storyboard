@@ -22,21 +22,30 @@
                                 <rect key="frame" x="0.0" y="317.5" width="375" height="32"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="FbD-7R-S3T"/>
+                                    <constraint firstAttribute="height" constant="32" id="cCk-7K-asC"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKa-9a-Por">
+                                <rect key="frame" x="161.5" y="277.5" width="52" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.98039215690000003" green="0.36078431370000003" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.79607843140000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="udW-ng-fu7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="EYh-X2-7KP"/>
-                            <constraint firstItem="udW-ng-fu7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="T7O-Gu-lcG"/>
-                            <constraint firstItem="udW-ng-fu7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="egP-rC-39f"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="udW-ng-fu7" secondAttribute="trailing" id="zP1-vF-8ia"/>
+                            <constraint firstItem="udW-ng-fu7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AZY-HB-UNa"/>
+                            <constraint firstItem="udW-ng-fu7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Icj-80-D77"/>
+                            <constraint firstItem="udW-ng-fu7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aWQ-XE-rn9"/>
+                            <constraint firstItem="udW-ng-fu7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="k9p-ad-02k"/>
+                            <constraint firstItem="udW-ng-fu7" firstAttribute="top" secondItem="tKa-9a-Por" secondAttribute="bottom" constant="16" id="mXe-lN-icn"/>
+                            <constraint firstItem="tKa-9a-Por" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xUA-f3-EAP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="rulerView" destination="udW-ng-fu7" id="cky-zA-Ohd"/>
+                        <outlet property="valueLabel" destination="tKa-9a-Por" id="Axf-Xi-Mrb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -8,36 +8,39 @@
 
 import UIKit
 
-class HGRulerMainUnitCell: UICollectionViewCell {
-    
-    override var reuseIdentifier: String? {
-        return Constant.mainUnitCellIdentifier
+/// Defines collection view cell for main unit of ruler view.
+public final class HGRulerMainUnitCell: UICollectionViewCell {
+  
+  override public var reuseIdentifier: String? {
+    return Constant.mainUnitCellIdentifier
+  }
+  
+  /// view for unit.
+  private var unitView: UIView! {
+    didSet {
+      unitView.translatesAutoresizingMaskIntoConstraints = false
+      addSubview(unitView)
+      NSLayoutConstraint.activate([
+        unitView.topAnchor.constraint(equalTo: topAnchor),
+        unitView.bottomAnchor.constraint(equalTo: bottomAnchor),
+        unitView.widthAnchor.constraint(equalToConstant: 1),
+        unitView.centerXAnchor.constraint(equalTo: centerXAnchor)
+        ])
     }
-    
-    private var unitLabel: UILabel! {
-        didSet {
-            unitLabel.translatesAutoresizingMaskIntoConstraints = false
-            addSubview(unitLabel)
-            let centerXConstraint = unitLabel.centerXAnchor.constraint(equalTo: centerXAnchor)
-            let topConstraint = unitLabel.topAnchor.constraint(equalTo: topAnchor)
-            let widthConstraint = unitLabel.widthAnchor.constraint(equalToConstant: 1)
-            let heightConstraint = unitLabel.heightAnchor.constraint(equalToConstant: 32)
-            NSLayoutConstraint.activate([centerXConstraint, topConstraint, widthConstraint, heightConstraint])
-        }
-    }
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        setup()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setup()
-    }
-    
-    private func setup() {
-        unitLabel = UILabel()
-        unitLabel.backgroundColor = .black
-    }
+  }
+  
+  override init(frame: CGRect) {
+    super.init(frame: frame)
+    setup()
+  }
+  
+  required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+    setup()
+  }
+  
+  private func setup() {
+    unitView = UIView()
+    unitView.backgroundColor = .black
+  }
 }

@@ -8,9 +8,12 @@
 
 import Foundation
 
+/// Defines constants.
 enum Constant {
-    
-    static let mainUnitCellIdentifier = "mainUnitCell"
-    
-    static let subUnitCellIdentifier = "subUnitCell"
+  
+  /// The cell identifier for main unit cell.
+  static let mainUnitCellIdentifier = "mainUnitCell"
+  
+  /// The cell identifier for sub unit cell.
+  static let subUnitCellIdentifier = "subUnitCell"
 }
